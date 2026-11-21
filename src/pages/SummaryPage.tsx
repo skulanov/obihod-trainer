@@ -68,7 +68,7 @@ export function SummaryPage({
   });
 
   return (
-    <div className="max-w-4xl space-y-8">
+    <div className="max-w-3xl mx-auto space-y-8">
       {/* Header & metadata */}
       <div className="space-y-2 pb-6 border-b border-border">
         <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-ink-muted">

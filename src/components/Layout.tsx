@@ -71,8 +71,8 @@ export function Layout({ route, hasActiveSession, onNavigate, children }: Layout
       </main>
 
       <footer className="border-t border-border bg-surface mt-12">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-5 text-xs text-ink-faint">
-          Обиходный тренажёр · Распознавание гласов и колен церковных напевов
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-5 text-center text-xs text-ink-faint">
+          by Dima Skulanov 2026
         </div>
       </footer>
     </div>

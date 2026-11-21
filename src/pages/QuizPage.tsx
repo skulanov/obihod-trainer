@@ -16,11 +16,14 @@ import {
   getVerdictLabel,
 } from '../domain/quizEngine.ts';
 import {
+  ALL_CATEGORIES,
   ALL_GLASES,
   ALL_KNEES,
+  CATEGORY_LABELS,
   formatKneeLabel,
   type ActiveQuizSession,
   type CatalogItem,
+  type CategoryCode,
   type GlasNumber,
   type KneeCode,
 } from '../domain/types.ts';
@@ -39,6 +42,7 @@ interface QuizPageProps {
   onNextTurn: () => void;
   onRecordReplay: () => void;
   onAudioUnavailable: (message: string) => void;
+  onSwitchCategory: (category: CategoryCode) => void;
   onFinishSession: () => void;
   onGoToSetup: () => void;
 }
@@ -52,6 +56,7 @@ export function QuizPage({
   onNextTurn,
   onRecordReplay,
   onAudioUnavailable,
+  onSwitchCategory,
   onFinishSession,
   onGoToSetup,
 }: QuizPageProps) {
@@ -70,6 +75,15 @@ export function QuizPage({
   }, [catalogItems, turn]);
 
   const targetUrl = catalogItem ? resolveStaticUrl(catalogItem.file) : null;
+
+  const totalTrop = useMemo(
+    () => catalogItems.filter((i) => i.category === 'trop').length,
+    [catalogItems]
+  );
+  const totalStih = useMemo(
+    () => catalogItems.filter((i) => i.category === 'stih').length,
+    [catalogItems]
+  );
 
   // Reset input selections whenever the active turn changes
   useEffect(() => {
@@ -216,6 +230,38 @@ export function QuizPage({
 
   return (
     <div className="max-w-3xl mx-auto space-y-6">
+      {/* Category segmented selector (matches Обучение page) */}
+      <div
+        role="tablist"
+        aria-label="Выбор категории песнопений"
+        className="inline-flex p-1 bg-subtle border border-border rounded-lg gap-1"
+      >
+        {ALL_CATEGORIES.map((cat) => {
+          const count = cat === 'trop' ? totalTrop : totalStih;
+          const active = session.config.category === cat;
+          return (
+            <button
+              key={cat}
+              role="tab"
+              type="button"
+              disabled={count === 0}
+              aria-selected={active}
+              onClick={() => onSwitchCategory(cat)}
+              className={`px-4 py-2 min-h-[40px] rounded-md text-sm font-medium transition-colors whitespace-nowrap disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer ${
+                active
+                  ? 'bg-surface text-ink font-semibold shadow-xs'
+                  : 'text-ink-muted hover:text-ink'
+              }`}
+            >
+              {CATEGORY_LABELS[cat]}{' '}
+              <span className="font-mono tabular-nums text-xs text-ink-faint ml-1">
+                {count}
+              </span>
+            </button>
+          );
+        })}
+      </div>
+
       {/* Instruction */}
       <h1 className="font-serif text-2xl sm:text-3xl font-semibold text-ink">
         Послушайте запись и определите глас и колено

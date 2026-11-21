@@ -1,6 +1,7 @@
 import { AlertTriangle, Loader2, RefreshCw } from 'lucide-react';
 import { useCallback, useEffect, useState } from 'react';
 import { Layout } from './components/Layout.tsx';
+import { getAvailableGlasesForCategory } from './domain/parser.ts';
 import {
   advanceSessionTurn,
   createActiveQuizSession,
@@ -13,6 +14,7 @@ import {
 import type {
   ActiveQuizSession,
   CatalogData,
+  CategoryCode,
   GlasNumber,
   QuizConfig,
   TrainingSessionRecord,
@@ -116,6 +118,58 @@ export default function App() {
       navigate({ page: 'quiz' });
     },
     [catalog, activeSession, archiveSessionRecord, updateActiveSession, navigate]
+  );
+
+  const handleSwitchQuizCategory = useCallback(
+    (nextCategory: CategoryCode) => {
+      if (!catalog || !activeSession) return;
+      if (activeSession.config.category === nextCategory) return;
+
+      const availableGlases = getAvailableGlasesForCategory(catalog.items, nextCategory);
+      if (availableGlases.length === 0) return;
+
+      const saved = preferences.lastGlasesByCategory[nextCategory]?.filter((g) =>
+        availableGlases.includes(g)
+      );
+      const glases = saved && saved.length > 0 ? saved : availableGlases;
+
+      const hasProgress =
+        activeSession.turns.length > 0 ||
+        Boolean(activeSession.currentTurn && activeSession.currentTurn.attempts.length > 0);
+      if (hasProgress) {
+        const archived = finishActiveSession(activeSession, 'interrupted');
+        archiveSessionRecord(archived);
+      }
+
+      handleSavePreferences({
+        ...preferences,
+        lastCategory: nextCategory,
+        lastGlasesByCategory: {
+          ...preferences.lastGlasesByCategory,
+          [nextCategory]: glases,
+        },
+      });
+
+      const nextSession = createActiveQuizSession(
+        {
+          category: nextCategory,
+          glases,
+          mode: activeSession.config.mode,
+        },
+        catalog.items
+      );
+      if (nextSession) {
+        updateActiveSession(nextSession);
+      }
+    },
+    [
+      catalog,
+      activeSession,
+      preferences,
+      archiveSessionRecord,
+      handleSavePreferences,
+      updateActiveSession,
+    ]
   );
 
   const handleSubmitAttempt = useCallback(
@@ -247,6 +301,7 @@ export default function App() {
               onNextTurn={() => handleAdvanceTurn('next')}
               onRecordReplay={handleRecordReplay}
               onAudioUnavailable={handleAudioUnavailable}
+              onSwitchCategory={handleSwitchQuizCategory}
               onFinishSession={handleFinishSession}
               onGoToSetup={() => navigate({ page: 'setup' })}
             />

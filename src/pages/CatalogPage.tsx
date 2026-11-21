@@ -130,7 +130,7 @@ export function CatalogPage({ catalogItems, focusId }: CatalogPageProps) {
     focusId && !catalogItems.some((item) => item.id === focusId);
 
   return (
-    <div className="max-w-3xl space-y-6">
+    <div className="max-w-3xl mx-auto space-y-6">
       <h1 className="font-serif text-3xl sm:text-4xl font-semibold text-ink">
         Обучение и прослушивание записей
       </h1>

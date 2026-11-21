@@ -131,7 +131,7 @@ export function SetupPage({
   };
 
   return (
-    <div className="max-w-3xl space-y-8">
+    <div className="max-w-3xl mx-auto space-y-8">
       <div className="space-y-2">
         <div className="text-xs text-ink-muted">Параметры упражнения</div>
         <h1 className="font-serif text-3xl sm:text-4xl font-semibold text-ink">
