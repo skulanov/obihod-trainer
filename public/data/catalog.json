@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-21T13:29:45.810Z",
+  "items": [
+    {
+      "id": "trop:1:1",
+      "category": "trop",
+      "glas": 1,
+      "knee": "1",
+      "file": "audio/trop_1_1.mp3",
+      "originalFilename": "trop_1_1.mp3"
+    },
+    {
+      "id": "trop:1:1a",
+      "category": "trop",
+      "glas": 1,
+      "knee": "1a",
+      "file": "audio/trop_1_1a.mp3",
+      "originalFilename": "trop_1_1a.mp3"
+    },
+    {
+      "id": "trop:1:2",
+      "category": "trop",
+      "glas": 1,
+      "knee": "2",
+      "file": "audio/trop_1_2.mp3",
+      "originalFilename": "trop_1_2.mp3"
+    },
+    {
+      "id": "trop:2:1",
+      "category": "trop",
+      "glas": 2,
+      "knee": "1",
+      "file": "audio/trop_2_1.mp3",
+      "originalFilename": "trop_2_1.mp3"
+    },
+    {
+      "id": "trop:2:2",
+      "category": "trop",
+      "glas": 2,
+      "knee": "2",
+      "file": "audio/trop_2_2.mp3",
+      "originalFilename": "trop_2_2.mp3"
+    },
+    {
+      "id": "trop:2:3",
+      "category": "trop",
+      "glas": 2,
+      "knee": "3",
+      "file": "audio/trop_2_3.mp3",
+      "originalFilename": "trop_2_3.mp3"
+    },
+    {
+      "id": "trop:2:К",
+      "category": "trop",
+      "glas": 2,
+      "knee": "К",
+      "file": "audio/trop_2_К.mp3",
+      "originalFilename": "trop_2_К.mp3"
+    },
+    {
+      "id": "trop:3:1",
+      "category": "trop",
+      "glas": 3,
+      "knee": "1",
+      "file": "audio/trop_3_1.mp3",
+      "originalFilename": "trop_3_1.mp3"
+    },
+    {
+      "id": "trop:3:2",
+      "category": "trop",
+      "glas": 3,
+      "knee": "2",
+      "file": "audio/trop_3_2.mp3",
+      "originalFilename": "trop_3_2.mp3"
+    },
+    {
+      "id": "trop:3:3",
+      "category": "trop",
+      "glas": 3,
+      "knee": "3",
+      "file": "audio/trop_3_3.mp3",
+      "originalFilename": "trop_3_3.mp3"
+    },
+    {
+      "id": "trop:3:К",
+      "category": "trop",
+      "glas": 3,
+      "knee": "К",
+      "file": "audio/trop_3_К.mp3",
+      "originalFilename": "trop_3_К.mp3"
+    },
+    {
+      "id": "trop:4:1",
+      "category": "trop",
+      "glas": 4,
+      "knee": "1",
+      "file": "audio/trop_4_1.mp3",
+      "originalFilename": "trop_4_1.mp3"
+    },
+    {
+      "id": "trop:4:2",
+      "category": "trop",
+      "glas": 4,
+      "knee": "2",
+      "file": "audio/trop_4_2.mp3",
+      "originalFilename": "trop_4_2.mp3"
+    },
+    {
+      "id": "trop:4:К",
+      "category": "trop",
+      "glas": 4,
+      "knee": "К",
+      "file": "audio/trop_4_К.mp3",
+      "originalFilename": "trop_4_К.mp3"
+    },
+    {
+      "id": "trop:5:1",
+      "category": "trop",
+      "glas": 5,
+      "knee": "1",
+      "file": "audio/trop_5_1.mp3",
+      "originalFilename": "trop_5_1.mp3"
+    },
+    {
+      "id": "trop:5:2",
+      "category": "trop",
+      "glas": 5,
+      "knee": "2",
+      "file": "audio/trop_5_2.mp3",
+      "originalFilename": "trop_5_2.mp3"
+    },
+    {
+      "id": "trop:5:3",
+      "category": "trop",
+      "glas": 5,
+      "knee": "3",
+      "file": "audio/trop_5_3.mp3",
+      "originalFilename": "trop_5_3.mp3"
+    },
+    {
+      "id": "trop:5:К",
+      "category": "trop",
+      "glas": 5,
+      "knee": "К",
+      "file": "audio/trop_5_К.mp3",
+      "originalFilename": "trop_5_К.mp3"
+    },
+    {
+      "id": "trop:6:1",
+      "category": "trop",
+      "glas": 6,
+      "knee": "1",
+      "file": "audio/trop_6_1.mp3",
+      "originalFilename": "trop_6_1.mp3"
+    },
+    {
+      "id": "trop:6:2",
+      "category": "trop",
+      "glas": 6,
+      "knee": "2",
+      "file": "audio/trop_6_2.mp3",
+      "originalFilename": "trop_6_2.mp3"
+    },
+    {
+      "id": "trop:6:2a",
+      "category": "trop",
+      "glas": 6,
+      "knee": "2a",
+      "file": "audio/trop_6_2a.mp3",
+      "originalFilename": "trop_6_2a.mp3"
+    },
+    {
+      "id": "trop:6:3",
+      "category": "trop",
+      "glas": 6,
+      "knee": "3",
+      "file": "audio/trop_6_3.mp3",
+      "originalFilename": "trop_6_3.mp3"
+    },
+    {
+      "id": "trop:6:К",
+      "category": "trop",
+      "glas": 6,
+      "knee": "К",
+      "file": "audio/trop_6_К.mp3",
+      "originalFilename": "trop_6_К.mp3"
+    },
+    {
+      "id": "trop:7:1",
+      "category": "trop",
+      "glas": 7,
+      "knee": "1",
+      "file": "audio/trop_7_1.mp3",
+      "originalFilename": "trop_7_1.mp3"
+    },
+    {
+      "id": "trop:7:2",
+      "category": "trop",
+      "glas": 7,
+      "knee": "2",
+      "file": "audio/trop_7_2.mp3",
+      "originalFilename": "trop_7_2.mp3"
+    },
+    {
+      "id": "trop:8:1",
+      "category": "trop",
+      "glas": 8,
+      "knee": "1",
+      "file": "audio/trop_8_1.mp3",
+      "originalFilename": "trop_8_1.mp3"
+    },
+    {
+      "id": "stih:2:1",
+      "category": "stih",
+      "glas": 2,
+      "knee": "1",
+      "file": "audio/stih_2_1.mp3",
+      "originalFilename": "stih_2_1.mp3"
+    },
+    {
+      "id": "stih:2:2",
+      "category": "stih",
+      "glas": 2,
+      "knee": "2",
+      "file": "audio/stih_2_2.mp3",
+      "originalFilename": "stih_2_2.mp3"
+    },
+    {
+      "id": "stih:2:3",
+      "category": "stih",
+      "glas": 2,
+      "knee": "3",
+      "file": "audio/stih_2_3.mp3",
+      "originalFilename": "stih_2_3.mp3"
+    },
+    {
+      "id": "stih:2:К",
+      "category": "stih",
+      "glas": 2,
+      "knee": "К",
+      "file": "audio/stih_2_К.mp3",
+      "originalFilename": "stih_2_К.mp3"
+    },
+    {
+      "id": "stih:4:1",
+      "category": "stih",
+      "glas": 4,
+      "knee": "1",
+      "file": "audio/stih_4_1.mp3",
+      "originalFilename": "stih_4_1.mp3"
+    },
+    {
+      "id": "stih:4:2",
+      "category": "stih",
+      "glas": 4,
+      "knee": "2",
+      "file": "audio/stih_4_2.mp3",
+      "originalFilename": "stih_4_2.mp3"
+    },
+    {
+      "id": "stih:4:3",
+      "category": "stih",
+      "glas": 4,
+      "knee": "3",
+      "file": "audio/stih_4_3.mp3",
+      "originalFilename": "stih_4_3.mp3"
+    },
+    {
+      "id": "stih:4:4",
+      "category": "stih",
+      "glas": 4,
+      "knee": "4",
+      "file": "audio/stih_4_4.mp3",
+      "originalFilename": "stih_4_4.mp3"
+    },
+    {
+      "id": "stih:4:5",
+      "category": "stih",
+      "glas": 4,
+      "knee": "5",
+      "file": "audio/stih_4_5.mp3",
+      "originalFilename": "stih_4_5.mp3"
+    },
+    {
+      "id": "stih:4:К",
+      "category": "stih",
+      "glas": 4,
+      "knee": "К",
+      "file": "audio/stih_4_К.mp3",
+      "originalFilename": "stih_4_К.mp3"
+    },
+    {
+      "id": "stih:5:1",
+      "category": "stih",
+      "glas": 5,
+      "knee": "1",
+      "file": "audio/stih_5_1.mp3",
+      "originalFilename": "stih_5_1.mp3"
+    },
+    {
+      "id": "stih:5:2",
+      "category": "stih",
+      "glas": 5,
+      "knee": "2",
+      "file": "audio/stih_5_2.mp3",
+      "originalFilename": "stih_5_2.mp3"
+    },
+    {
+      "id": "stih:5:3",
+      "category": "stih",
+      "glas": 5,
+      "knee": "3",
+      "file": "audio/stih_5_3.mp3",
+      "originalFilename": "stih_5_3.mp3"
+    },
+    {
+      "id": "stih:5:К",
+      "category": "stih",
+      "glas": 5,
+      "knee": "К",
+      "file": "audio/stih_5_К.mp3",
+      "originalFilename": "stih_5_К.mp3"
+    }
+  ]
+}
